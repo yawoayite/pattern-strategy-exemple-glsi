@@ -1,7 +1,7 @@
 public class Context {
-    private inTri tri;
+    private inTri tri; //Pour pouvoir utiliser les différents types de tri il faut déclarer un objet de type inTri
 
-    //Ici on initialise un client avec un tri  par défaut
+    //Ici on initialise un context avec un tri  par défaut
     public Context(){
         this.tri = new Tridefault();
     }

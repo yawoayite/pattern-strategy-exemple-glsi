@@ -1,16 +1,20 @@
 public class App {
     public static void main(String[] args) {
         //Cette initialisation utilise le tri par défaut
-        Context c =new Context();
+        Context c = new Context();
         c.afficher();
 
         //Changement de tri. l'affichage sera ce qu'il se trouve dans notre méthode trier surchagée dans Tribullle
-        c.setTri(new Tribulle());
+
+        c.setTri(new Tribulle());//On change de méthode de tri
         c.afficher();
 
         //Changement de tri. l'affichage sera ce qu'il se trouve dans notre méthode trier surchagée dans Trifusion
-        c.setTri(new Trifusion());
+
+        c.setTri(new Trifusion());//On change de méthode de tri
         c.afficher();
+
+
 
         //Pour apporter une nouvelle méthode de tri il suffit de créer une classe implémentant l'interface inTri
         //Et surcharger la méthode trier()
